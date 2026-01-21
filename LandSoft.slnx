@@ -1,1 +1,6 @@
-<Solution />
+<Solution>
+  <Project Path="src/LandSoft.Api/LandSoft.Api.csproj" />
+  <Project Path="src/LandSoft.Core/LandSoft.Core.csproj" />
+  <Project Path="src/LandSoft.Data/LandSoft.Data.csproj" />
+  <Project Path="src/LandSoft.WebApp/LandSoft.WebApp.csproj" />
+</Solution>
