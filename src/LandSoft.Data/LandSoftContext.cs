@@ -39,7 +39,7 @@ namespace LandSoft.Data
         {
             var entries = ChangeTracker
           .Entries()
-          .Where(e => e.State == EntityState.Added);
+          .Where(e => e.State == EntityState.Added || e.State == EntityState.Modified);
 
             foreach (var entityEntry in entries)
             {
