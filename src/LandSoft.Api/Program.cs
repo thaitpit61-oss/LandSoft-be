@@ -1,3 +1,4 @@
+using LandSoft.Api;
 using LandSoft.Core.Domain.Identity;
 using LandSoft.Data;
 using Microsoft.AspNetCore.Identity;
@@ -52,9 +53,12 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+//Seeding data
+app.MigrationDatabase();
 
 app.Run();
